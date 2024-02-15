@@ -1,0 +1,30 @@
+header,footer, aside{
+    position: relative;
+}
+
+.header-bar{
+    position: absolute; 
+    margin: 0;
+    padding-bottom: 10px;
+
+    background-color: blue;
+}
+
+.post{
+    background-color: purple; 
+    margin: 50px;
+
+
+}
+
+.sidebar{
+    background-color: green;
+    position: fixed; 
+    
+}
+
+.suggestions{
+    background-color: red;
+
+
+}
