@@ -1,56 +1,365 @@
 <!DOCTYPE html>
-<html lang = 'en'> </html>
-
+<html lang = 'en'> 
+<html> 
 <head>
 
     <meta name= "Instagram" content = "Retro Instagram Clone">
-    <link href = "style.css" rel="stylesheet" type = "text/css">
+    <title> Retro Instagram Clone </title>
+    <link href = "style.css" rel = "stylesheet" type="text/css">
     
 </head>
 
 <body> 
+    <!-- header bar with search -->
+
     <header>
-        <div id = "header-bar"> 
+        <nav class = "header-bar"> 
+            <!-- container that holds all the things in the bar  -->
+            <div class = "container"> 
+                <div class = "farleft">
+                    <ul class = "icon-logo"> 
+                        <li class = "item">
+                            <a href = "#" class = "icon">
+                                <img src = "images/icon.png" alt = "icon" height = 30px>
+                            </a>
+                        </li>
+                        <li class = "item">
+                            <a href = "#" class = "instalogo">
+                                <img src = "images/logotype.png" alt = "logo" height = 30px>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Search-bar">
+                    <input type="text" placeholder="Search..">
+                    <img src = "images/glass.jpeg" alt = search height = "18" >
+                    
+                </div>
+                <div class = "farright">
+                    <ul class = "navigation"> 
+                        <li class = "item">
 
-        <form action = "/submit-form.php" method="post">
-            <label for = "Search"> Search</label>
-            <input type = "text" >
-
-
+                            <a href = "#" class = "compass">
+                                <img src = "images/compass.png" alt = "compass" height = 30px>
+                            </a>
+                        </li>
+                        <li class = "item">
+                            <a href = "#" class = "heart">
+                                <img src = "images/heart.png" alt = "heart" height = 30px >
+                            </a>
+                        </li>
+                        <li class = "item">
+                            <a href = "#" class = "user">
+                                <img src = "images/user.png" alt = "user" height = 30px>
+                            </a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
         </div>
-        </form>
-        
-    
-    
-    
-    
-    
-    
     </header>
-
-    <main>
-        <div id = "post">
-
-        </div>
-
-        <div id = "sidebar">
-
-
-        </div>
-
-        <div id = "suggestions">
-
+    <mian>
+        <div class = "sidebar">
             
+            <div class = "profile-info">
+                <div class = "pic">
+                    <img src="images/post1user.jpeg" alt = "profile pic" class = "profile-picture" />
+                </div>
+                <div class = "username" >
+                    <p>@CSEguy</p>
+                    <p>Chloe Smith</p>
+                </div>
+                
+            </div>
+            <div class = "story-area">
+                <div class = "storyhead">
+                    <ul class = "story-header">
+                        <li class = "item">
+                            <p class = "stories">Stories</p>
+                        </li>
+                        <li class = "item">
+                            <p class = "watch">Watch All</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class = "individual-stories">
+                    <div class = "story">
+                        <div class = "pic">
+                            <img src="images/post1user.jpeg" alt = "profile pic" class = "profile-picture" />
+                        </div>
+                        <div class = "username" >
+                            <p>@CSEguy</p>
+                            <p>6 HOURS AGO</p>
+                        </div>
+                        
+                    </div>
+                    <div class = "story">
+                        <div class = "pic">
+                            <img src="images/post1user.jpeg" alt = "profile pic" class = "profile-picture" />
+                        </div>
+                        <div class = "username" >
+                            <p>@CSEguy</p>
+                            <p>4 HOURS AGO</p>
+                        </div>
+                        
+                    </div>
+                    <div class = "story">
+                        <div class = "pic">
+                            <img src="images/post1user.jpeg" alt = "profile pic" class = "profile-picture" />
+                        </div>
+                        <div class = "username" >
+                            <p>@CSEguy</p>
+                            <p>3 HOURS AGO</p>
+                        </div>
+                        
+                    </div>
+                    <div class = "story">
+                        <div class = "pic">
+                            <img src="images/post1user.jpeg" alt = "profile pic" class = "profile-picture" />
+                        </div>
+                        <div class = "username" >
+                            <p>@CSEguy</p>
+                            <p>3 HOURS AGO</p>
+                        </div>
+                        
+                    </div>
+                    <div class = "story">
+                        <div class = "pic">
+                            <img src="images/post1user.jpeg" alt = "profile pic" class = "profile-picture" />
+                        </div>
+                        <div class = "username" >
+                            <p>@CSEguy</p>
+                            <p>3 HOURS AGO</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            <div class = "footer-links">
+                <p class = "first">About Us Support Press API Jobs 
+                    <br> 
+                    Privacy Terms Directory Profiles
+                    <br>
+                     Hashtags Language
+                    <br>
+                    <br>
+                    <br>
+                    © 2018 Instagram
+                </p>
+                
+            </div>
+        </div>
+        <div class = "maincontainer"> 
+            <div class = "postcont">
+                <div class = "post">
+                    <div class = "post-head">
+                        <div class = "info">
+                            <div class = "pic">
+                                <img src="images/post1user.jpeg" alt = "profile pic" class = "profile-picture" />
+                            </div>
+                            <div class = "username" >
+                                <p>@CSEguy</p>
+                                
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class = "photo">
+                        <img src = "images/post1.jpeg" alt = "software engineering meme" class = "post"/>
+    
+                    </div>
+                    <div class = "bottom-icons">
+                        <div class = "bottom-icons-left">
+                            <ul class = "bottom-icons-left">
+                                <li class = "item">
+    
+                                    <a href = "#" class = "heart">
+                                        <img src = "images/heart.png" alt = "heart" height = 30px>
+                                    </a>
+                                </li>
+                                <li class = "item">
+                                    <a href = "#" class = "speech">
+                                        <img src = "images/speech_bubble.png" alt = "comment" height = 30px >
+                                    </a>
+                                </li>
+                                <li class = "item">
+                                    <a href = "#" class = "share">
+                                        <img src = "images/upload.png" alt = "share" height = 30px>
+                            </ul>
+                        </div>
+                        <div class = "bottom-icons-right">
+                            <ul class ="icons-left">
+                                <li class = "item">
+    
+                                    <a href = "#" class = "bookmark">
+                                        <img src = "images/bookmark.png" alt = "bookmark" height = 30px>
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = "captions">
+                        <p class = "like"> 500 likes </p>
+                        <p class = "caption"> @CSEguy caption here </p>
+                        <p class = "time"> 3 HOURS AGO</p>
+    
+                        <div class = "comment">
+                            <ul class = "comment-list">
+                                <li class = "item">
+                                    <a href ="#" class = "comments"> Add a comment...</a>
+                                </li>
+                                <li class = "item">
+                                    <p class = "elipsis"> ● ● ●</p>
+                                    
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class = "post">
+                    <div class = "post-head">
+                        <div class = "info">
+                            <div class = "pic">
+                                <img src="images/post1user.jpeg" alt = "profile pic" class = "profile-picture" />
+                            </div>
+                            <div class = "username" >
+                                <p>@CSEguy</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class = "photo">
+                        <img src = "images/post1.jpeg" alt = "software engineering meme" class = "post"/>
+    
+                    </div>
+                    <div class = "bottom-icons">
+                        <div class = "bottom-icons-left">
+                            <ul class = "bottom-icons-left">
+                                <li class = "item">
+    
+                                    <a href = "#" class = "heart">
+                                        <img src = "images/heart.png" alt = "heart" height = 30px>
+                                    </a>
+                                </li>
+                                <li class = "item">
+                                    <a href = "#" class = "speech">
+                                        <img src = "images/speech_bubble.png" alt = "comment" height = 30px >
+                                    </a>
+                                </li>
+                                <li class = "item">
+                                    <a href = "#" class = "share">
+                                        <img src = "images/upload.png" alt = "share" height = 30px>
+                            </ul>
+                        </div>
+                        <div class = "bottom-icons-right">
+                            <ul class ="icons-left">
+                                <li class = "item">
+    
+                                    <a href = "#" class = "bookmark">
+                                        <img src = "images/bookmark.png" alt = "bookmark" height = 30px>
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = "captions">
+                        <p class = "like"> 500 likes </p>
+                        <p class = "caption"> @CSEguy caption here </p>
+                        <p class = "time"> 3 HOURS AGO</p>
+    
+                        <div class = "comment">
+                            <ul class = "comment-list">
+                                <li class = "item">
+                                    <a href ="#" class = "comments"> Add a comment...</a>
+                                </li>
+                                <li class = "item">
+                                    <p class = "elipsis"> ...</p>
+                                    
+                                </li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class = "suggestions">
+            suggestions go here 
+            <div class = "suggestions-head">
+                <ul class = "shead">
+                    <li class = "item">
+                        <p class = "for-you">Suggestions for You</p>
+
+                    </li>
+                    <li class = "item">
+                        <p class = "see-all"> See All</p>
+                    </li>
+                </ul>
+            </div>
+            <div id = "scontainer">
+                <div class = "suggested">
+                    1
+                    <div class = "suggested-elements">
+                        <div class = "Sinfo">
+                            <div class = "Spic">
+                                <img src="images/post1user.jpeg" alt = "profile pic" class = "S-profile-picture" />
+                            </div>
+                            <div class = "Susername" >
+                                <p>@CSEguy
+                                    <br>
+                                    Popular</p>
+                            </div>
+                        </div>
+                            <div class = "relevance">
+                                <p>Popular</p>
+                            </div>  
+                       
+                            <div class = "follow-button">
+                                <div class = "follow">
+                                    <p>Follow</p>
+                                </div>
+                            </div>
+                            
+                    </div>
+                </div>
+
+                
+                <div class = "suggested">
+                    2
+                </div>
+                <div class= " suggested">
+                    3
+                </div>
+            </div>
         </div>
 
 
 
-    </main>
+    </mian>
+    
+
+
+
 
 
 
 
 </body>
+
+   
+
+
+
+
+
 <footer>
 
 </footer>
+</html> 
